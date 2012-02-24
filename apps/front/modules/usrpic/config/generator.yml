@@ -1,0 +1,12 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      SysPic
+    theme:            default
+    edit:
+      fields:
+        filename:             
+          name: Picture
+          type: admin_input_file_tag
+          upload_dir: picture
+          params: include_link=picture include_remove=true

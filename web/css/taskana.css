@@ -1,0 +1,181 @@
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+background: transparent;
+}
+
+:focus {
+outline: 0;
+}
+body {
+line-height: 1;
+color: black;
+background: white;
+}
+ol, ul {
+list-style: none;
+}
+
+table {
+
+border-spacing: 0;
+}
+caption, th, td {
+text-align: left;
+font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+
+/*=========================================================================*/
+
+body {font-family: Calibri, Trebuchet MS, Verdana; padding: 30px; font-size: 9pt;
+
+
+}
+table {width: 100%;}
+td, th {padding: 3px;  vertical-align: middle;}
+th {background-color: #eaeaea; font-size: 9pt;}
+
+
+
+small {font-size: 9pt;}
+h1 {font-size: 24pt; font-weight: bold;}
+h2 {font-size: 12pt; font-weight: bold;}
+h3 {font-size: 20pt; font-weight: bold;}
+h4 {font-size: 14pt; font-weight: bold;}
+
+.half {
+    width: 48%; 
+    margin: 1%; 
+    padding: 1%;
+    float:left; }
+    
+.half th {background-color: #aedd92;  }
+.half td {font-size: 10pt;}
+.half tr.bot td {color: #ccc;}
+.half tr.pink td {background-color: #ffdbdb;}
+
+tr.gray td, tr.gray th {background-color: #c0c0c0;}
+
+.pagination div {display: block; float: left; margin-left: 10px;  text-align: center; padding: 6px; padding-left: 12px; padding-right: 12px; margin-top: 10px; margin-bottom: 10px;}
+.pagination .page {background-color: #00a6db; color: #fff;}
+.pagination .lpage {background-color: #f3f3f3;}
+
+#main {width: 950px; margin:auto; }
+#content { padding: 35px; background-color: #fff; width: 880px; margin: auto; padding-top: 15px; padding-bottom: 15px; min-height:700px;
+    font-size: 11pt;
+    }
+#navbar {width: 630px; float: left; height: 90px; margin-left: 0px;}
+#navbar a{font-size: 24pt; font-weight: bold; color: #ff8200; display: block; float: left; margin-right: 20px;}
+#loginform {width: 250px; margin:auto; height: 90px;}
+#loginform div{margin: 20px;}
+#loginform td {text-align: right; border: none;}
+
+.tcorner #lc {float: left; width: 10px; height: 10px; background-image: url("http://img2.erolakes.com/img/corner.png");  }
+.tcorner #rc {float: right; width: 10px; height: 10px; background-image: url("http://img2.erolakes.com/img/corner.png"); 
+    background-position: -10px 0px;
+     }
+.bcorner #lc {float: left; width: 10px; height: 10px; background-image: url("http://img2.erolakes.com/img/corner.png");  background-position: 0px -10px; }
+.bcorner #rc {float: right; width: 10px; height: 10px; background-image: url("http://img2.erolakes.com/img/corner.png"); 
+    background-position: -10px -10px;
+     }
+.tcorner, .bcorner { width: 950px; height: 10px; overflow: hidden;}
+.tcorner #w, .bcorner #w {float: left; width: 930px; height: 10px; background-color: #fff;}
+
+.welcome {font-size: 40pt; font-weight: bold; margin-top: -15px;}
+.welcome a {color: #ff8200;}
+
+.contacts tr td {border: none; color: white; font-size: 14pt; font-weight: bold; text-align: center; padding-top: 10px;}
+table.stat tr td {text-align: right; padding: 4px; font-family: Consolas; font-size: 10pt;}
+table.stat tr th {text-align: center; padding: 4px;}  
+
+table.reg {width: 300px; border: none;}
+table.reg tr td, table.reg tr th { border: none;}
+table.reg tr th {text-align: right; padding-right: 5px;}
+
+.navfilter {display: block; width:100%; float: left;}
+.navfilter a {display: block; padding: 5px; margin: 5px; float: left;}
+.navfilter a.cur {background-color: #00a6db; color: #fff;}
+
+table.task { width: 29%; margin: 18px; margin-top: 8px; float:left; border: 8px solid #eaeaea;}
+
+
+table.task td{ padding: 4px; padding-left: 6px; border: none; line-height: 16px; font-size: 12px;}
+table.task th{ padding: 7px;}
+
+.urgency1 { background-color: #fff;}
+.urgency2, .urgency2 a { color: #bdbdbd;}
+.urgency3, .urgency3 a { color: #d0133f;}
+
+ 
+tr.title td{ font-size: 11pt;}
+
+.stat2 td a{font-weight: bold;  display: block; float: left;}
+.stat2 td{  font-size: 6pt; color: gray;}
+.stat2 td small{ display: block; float: left; margin: 2px; margin-right: 4px; }
+
+a b {font-family:  Arial; font-size: 9pt;}
+
+
+table.task td.tabs {background-color: #eaeaea; padding: 0px; height: 16px; overflow: hidden;}
+.tabs a {display:block; margin-right:3px; padding:5px; padding-left:10px; padding-right:10px; float: left;  background-color: #ddd; text-decoration: none; color: #000;}
+.tabs a.act{background-color: #fff; color: black; text-decoration: none;}
+
+table#me { float:left; border: 8px solid #89b5e1;}
+table#me th { background-color : #89b5e1;}
+table#me td.tabs   { background-color : #89b5e1;}  
+
+#me h1 { color: #fff;}
+.task h1 { color: #555;}
+
+.CommentForm textarea {height: 16px; width: 80%; margin-top: 4px;}
+
+.CommentForm input {height: 16px; width: 8%; margin-top: 4px;}
+.comments .item{color: gray; margin-top: 3px; padding-left: 5px; padding-right: 4px; border-left: 3px solid gray;}
+.fallout {padding-left: 12px; padding-bottom: 10px; padding-top: 0px; line-height: 1.4;}
+
+
+#travkinoIco {
+    background-image: url("/images/travkino.png");
+}
+
+#taskanaIco {
+    background-image: url("/images/taskana.png");
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: 18px;
+}
+#taskanaIco option{
+
+}
+
+.grey {
+	color: #777;
+}
+
+.grey a {
+	color: #fff;
+	background-color: #dedede;
+	text-decoration: none;
+	padding: 2px;
+}
+
+a.showdesc {
+	text-decoration: none;
+}
+
+a {color: #659fda; }

@@ -1,0 +1,196 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  blog:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: blog_seq, primaryKey: true }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    title: { type: VARCHAR, size: '128' }
+    content: { type: LONGVARCHAR }
+    spic: { type: INTEGER, foreignTable: sys_pic, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    rank: { type: INTEGER, required: true, default: '0' }
+    hidden: { type: BOOLEAN }
+    modeid: { type: INTEGER, required: true, foreignTable: mode, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    _indexes: { blog_FI_1: [userid], blog_FI_2: [spic] }
+  blog_comment:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: blog_comment_seq, primaryKey: true }
+    blogid: { type: INTEGER, required: true, foreignTable: blog, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    content: { type: LONGVARCHAR }
+    created_at: { type: TIMESTAMP }
+    rank: { type: INTEGER }
+    hidden: { type: BOOLEAN }
+    _indexes: { FI__19: [blogid], FI__20: [userid] }
+  mode:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: mode_seq, primaryKey: true }
+    name: { type: VARCHAR, size: '128' }
+  stat:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: stat_seq, primaryKey: true }
+    name: { type: VARCHAR, size: '128' }
+  urgency:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: urgency_seq, primaryKey: true }
+    name: { type: VARCHAR, size: '128' }
+  permission:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: permission_seq, primaryKey: true }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    objectid: { type: INTEGER }
+    model: { type: VARCHAR, size: '128' }
+    mode: { type: INTEGER }
+    created_at: { type: TIMESTAMP }
+    _indexes: { permission_FI_1: [userid], FI_model: [model] }  
+  picture:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: picture_seq, primaryKey: true }
+    content: { type: LONGVARCHAR }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    owner: { type: INTEGER, required: false, index: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    stat: { type: INTEGER }
+    cost: { type: FLOAT }
+    name: { type: VARCHAR, size: '128' }
+    modeid: { type: INTEGER, required: true, foreignTable: mode, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    created_at: { type: TIMESTAMP }
+    updated_at: { type: TIMESTAMP }
+    rank: { type: INTEGER, required: true, default: '0' }
+    privte: { type: BOOLEAN }
+    not_for_sale: { type: BOOLEAN }
+    hidden: { type: BOOLEAN }
+    _indexes: { FI__45: [userid] }
+    _uniques: { pictureu: [name] }
+  picture_comment:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: picture_comment_seq, primaryKey: true }
+    pictureid: { type: INTEGER, required: true, foreignTable: picture, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    content: { type: LONGVARCHAR }
+    created_at: { type: TIMESTAMP }
+    rank: { type: INTEGER }
+    hidden: { type: BOOLEAN }
+    _indexes: { FI__17: [pictureid], FI__18: [userid] }
+  test:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: test_seq, primaryKey: true }
+    taskid: { type: INTEGER, required: true, foreignTable: picture, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    content: { type: LONGVARCHAR }
+    succes: { type: BOOLEAN }
+    created_at: { type: TIMESTAMP }
+    _indexes: { FI__57: [taskid], FI__58: [userid] }
+  post:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: post_seq, primaryKey: true }
+    blogid: { type: INTEGER, required: true, foreignTable: blog, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    title: { type: VARCHAR, size: '128' }
+    content: { type: LONGVARCHAR }
+    created_at: { type: TIMESTAMP }
+    updated_at: { type: TIMESTAMP }
+    rank: { type: INTEGER }
+    hidden: { type: BOOLEAN }
+    modeid: { type: INTEGER, required: true, foreignTable: mode, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    _indexes: { FI__03: [userid], FI__08: [blogid], post_FI_3: [modeid] }
+  task:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: post_seq, primaryKey: true }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    authorid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    title: { type: VARCHAR, size: '128' }
+    content: { type: LONGVARCHAR }
+    created_at: { type: TIMESTAMP }
+    updated_at: { type: TIMESTAMP }
+    rank: { type: INTEGER }
+    hidden: { type: BOOLEAN }
+    statid: { type: INTEGER, required: true, foreignTable: stat, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    urgencyid: { type: INTEGER, required: true, foreignTable: urgency, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    _indexes: { FI__53: [userid] }
+  task_comment:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: task_comment_seq, primaryKey: true }
+    taskid: { type: INTEGER, required: true, foreignTable: task, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    content: { type: LONGVARCHAR }
+    created_at: { type: TIMESTAMP }
+    rank: { type: INTEGER }
+    pid: { type: INTEGER }
+    hidden: { type: BOOLEAN }
+    _indexes: { FI__04: [taskid], FI__05: [userid] }
+  post_comment:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: post_comment_seq, primaryKey: true }
+    postid: { type: INTEGER, required: true, foreignTable: post, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    content: { type: LONGVARCHAR }
+    created_at: { type: TIMESTAMP }
+    rank: { type: INTEGER }
+    pid: { type: INTEGER }
+    hidden: { type: BOOLEAN }
+    _indexes: { FI__04: [postid], FI__05: [userid] }
+  rank:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: rank_seq, primaryKey: true }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    objectid: { type: INTEGER }
+    model: { type: VARCHAR, size: '128' }
+    value: { type: INTEGER }
+    _indexes: { rank_FI_1: [userid] }
+  sf_tag:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: sf_tag_seq, primaryKey: true }
+    name: { type: VARCHAR, size: '100' }
+    is_triple: { type: INTEGER }
+    triple_namespace: { type: VARCHAR, size: '100' }
+    triple_key: { type: VARCHAR, size: '100' }
+    triple_value: { type: VARCHAR, size: '100' }
+    _indexes: { name: [name], triple1: [triple_namespace], triple2: [triple_key], triple3: [triple_value] }
+  sf_tagging:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: sf_tagging_seq, primaryKey: true }
+    tag_id: { type: INTEGER, required: true, foreignTable: sf_tag, foreignReference: id, onDelete: cascade, onUpdate: restrict }
+    taggable_model: { type: VARCHAR, size: '30' }
+    taggable_id: { type: INTEGER }
+    _indexes: { tag: [tag_id], taggable: [taggable_model, taggable_id] }
+  statmsg:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: statmsg_seq, primaryKey: true }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    content: { type: VARCHAR, size: '255' }
+    created_at: { type: TIMESTAMP }
+    _indexes: { SM__userid: [userid] }
+  sys_pic:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: sys_pic_seq, primaryKey: true }
+    filename: { type: VARCHAR, size: '128' }
+    hidden: { type: BOOLEAN }
+    _uniques: { syspicu: [filename] }
+  usr:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: usr_seq, primaryKey: true }
+    pass: { type: VARCHAR, size: '128' }
+    login: { type: VARCHAR, size: '64' }
+    email: { type: VARCHAR, size: '64' }
+    upic: { type: INTEGER, foreignTable: sys_pic, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    rank: { type: INTEGER }
+    balance: { type: DOUBLE }
+    bot: { type: BOOLEAN }
+    hidden: { type: BOOLEAN }
+    color: { type: VARCHAR, size: '6' }
+    date_birth: { type: TIMESTAMP }
+    created_at: { type: TIMESTAMP }
+    updated_at: { type: TIMESTAMP }
+    _indexes: { usr_FI_1: [upic], hidden: [hidden] }
+    _uniques: { usru: [email] }
+  usr_comment:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true, autoIncrement: true, sequence: usr_comment_seq, primaryKey: true }
+    userid: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    user2: { type: INTEGER, required: true, foreignTable: usr, foreignReference: id, onDelete: restrict, onUpdate: restrict }
+    content: { type: LONGVARCHAR }
+    created_at: { type: TIMESTAMP }
+    rank: { type: INTEGER }
+    hidden: { type: BOOLEAN }
+    _indexes: { FI__15: [userid], FI__16: [user2] }

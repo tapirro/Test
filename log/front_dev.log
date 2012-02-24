@@ -1,0 +1,270 @@
+Mar 31 16:27:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usr with parameters array (  'module' => 'usr',  'action' => 'index',)
+Mar 31 16:28:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:28:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:28:00 symfony [info] {usrActions} Call "usrActions->executeIndex()"
+Mar 31 16:28:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usr with parameters array (  'module' => 'usr',  'action' => 'index',)
+Mar 31 16:28:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:28:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:28:02 symfony [info] {usrActions} Call "usrActions->executeIndex()"
+Mar 31 16:31:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usr with parameters array (  'module' => 'usr',  'action' => 'index',)
+Mar 31 16:31:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:31:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:31:10 symfony [info] {usrActions} Call "usrActions->executeIndex()"
+Mar 31 16:31:10 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:31:10 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr
+Mar 31 16:31:10 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/indexSuccess.php"
+Mar 31 16:31:10 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:31:10 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:31:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:31:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:31:10 symfony [info] {sfWebDebugLogger} Configuration 100.68 ms (10)
+Mar 31 16:31:10 symfony [info] {sfWebDebugLogger} Factories 19.19 ms (1)
+Mar 31 16:31:10 symfony [info] {sfWebDebugLogger} Action "usr/index" 115.18 ms (1)
+Mar 31 16:31:10 symfony [info] {sfWebDebugLogger} View "Success" for "usr/index" 14.70 ms (1)
+Mar 31 16:31:10 symfony [info] {sfWebResponse} Send content (61662 o)
+Mar 31 16:31:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/create with parameters array (  'module' => 'usr',  'action' => 'create',)
+Mar 31 16:31:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:31:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:31:12 symfony [info] {usrActions} Call "usrActions->executeCreate()"
+Mar 31 16:31:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/create with parameters array (  'module' => 'usr',  'action' => 'create',)
+Mar 31 16:31:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:31:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:31:28 symfony [info] {usrActions} Call "usrActions->executeCreate()"
+Mar 31 16:31:28 symfony [info] {usrActions} Change template to "CURRENT/edit"
+Mar 31 16:31:28 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/editSuccess.php"
+Mar 31 16:31:28 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:31:28 symfony [debug] {sfPropelLogger} SELECT sys_pic.ID, sys_pic.FILENAME, sys_pic.HIDDEN FROM sys_pic
+Mar 31 16:31:28 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:31:28 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:31:28 symfony [err] {RuntimeException} Class "SysPic" must implement a "__toString" method to be rendered in a "sfWidgetFormPropelChoice" widget
+Mar 31 16:31:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Mar 31 16:31:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:31:28 symfony [info] {sfWebDebugLogger} Configuration 105.76 ms (10)
+Mar 31 16:31:28 symfony [info] {sfWebDebugLogger} Factories 19.91 ms (1)
+Mar 31 16:31:28 symfony [info] {sfWebDebugLogger} Action "usr/create" 106.06 ms (1)
+Mar 31 16:31:28 symfony [info] {sfWebDebugLogger} View "Success" for "usr/create" 111.91 ms (1)
+Mar 31 16:32:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/create with parameters array (  'module' => 'usr',  'action' => 'create',)
+Mar 31 16:32:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:32:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:32:08 symfony [info] {usrActions} Call "usrActions->executeCreate()"
+Mar 31 16:32:08 symfony [info] {usrActions} Change template to "CURRENT/edit"
+Mar 31 16:32:08 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/editSuccess.php"
+Mar 31 16:32:08 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:32:08 symfony [debug] {sfPropelLogger} SELECT sys_pic.ID, sys_pic.FILENAME, sys_pic.HIDDEN FROM sys_pic
+Mar 31 16:32:08 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:32:08 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:32:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:32:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:32:08 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+Mar 31 16:32:08 symfony [info] {sfWebDebugLogger} Factories 17.13 ms (1)
+Mar 31 16:32:08 symfony [info] {sfWebDebugLogger} Action "usr/create" 25.80 ms (1)
+Mar 31 16:32:08 symfony [info] {sfWebDebugLogger} View "Success" for "usr/create" 57.64 ms (1)
+Mar 31 16:32:08 symfony [info] {sfWebResponse} Send content (90261 o)
+Mar 31 16:32:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update with parameters array (  'module' => 'usr',  'action' => 'update',)
+Mar 31 16:32:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:32:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:32:41 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:33:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update with parameters array (  'module' => 'usr',  'action' => 'update',)
+Mar 31 16:33:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:33:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:33:30 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:33:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update with parameters array (  'module' => 'usr',  'action' => 'update',)
+Mar 31 16:33:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:33:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:33:51 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:33:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update with parameters array (  'module' => 'usr',  'action' => 'update',)
+Mar 31 16:33:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:33:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:33:55 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:35:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update with parameters array (  'module' => 'usr',  'action' => 'update',)
+Mar 31 16:35:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:35:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:35:38 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:37:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update with parameters array (  'module' => 'usr',  'action' => 'update',)
+Mar 31 16:37:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:37:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:37:38 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID IS NULL  AND usr.HIDDEN=false
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.EMAIL='tabootask@gmail.com' AND usr.HIDDEN=false LIMIT 1
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} SELECT nextval('usr_seq')
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} INSERT INTO usr (ID,PASS,LOGIN,EMAIL,RANK,BALANCE,BOT,HIDDEN,COLOR,CREATED_AT,UPDATED_AT) VALUES (1,'q1w2e3','Polansk','tabootask@gmail.com',1,1,false,false,'',10,11)
+Mar 31 16:37:38 symfony [info] {sfFrontWebController} Redirect to "http://taskana.l/front_dev.php/usr/edit/id/1"
+Mar 31 16:37:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Mar 31 16:37:38 symfony [info] {sfWebResponse} Send header "Location: http://taskana.l/front_dev.php/usr/edit/id/1"
+Mar 31 16:37:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:37:38 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (8)
+Mar 31 16:37:38 symfony [info] {sfWebDebugLogger} Factories 24.62 ms (1)
+Mar 31 16:37:38 symfony [info] {sfWebDebugLogger} Action "usr/update" 110.82 ms (1)
+Mar 31 16:37:38 symfony [info] {sfWebResponse} Send content (115 o)
+Mar 31 16:37:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/edit/id/1 with parameters array (  'module' => 'usr',  'action' => 'edit',  'id' => '1',)
+Mar 31 16:37:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:37:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:37:38 symfony [info] {usrActions} Call "usrActions->executeEdit()"
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID='1' AND usr.HIDDEN=false
+Mar 31 16:37:38 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/editSuccess.php"
+Mar 31 16:37:38 symfony [debug] {sfPropelLogger} SELECT sys_pic.ID, sys_pic.FILENAME, sys_pic.HIDDEN FROM sys_pic
+Mar 31 16:37:38 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:37:38 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:37:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:37:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:37:38 symfony [info] {sfWebDebugLogger} Configuration 9.35 ms (10)
+Mar 31 16:37:38 symfony [info] {sfWebDebugLogger} Factories 22.23 ms (1)
+Mar 31 16:37:38 symfony [info] {sfWebDebugLogger} Action "usr/edit" 46.49 ms (1)
+Mar 31 16:37:38 symfony [info] {sfWebDebugLogger} View "Success" for "usr/edit" 44.88 ms (1)
+Mar 31 16:37:38 symfony [info] {sfWebResponse} Send content (93226 o)
+Mar 31 16:37:42 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usr with parameters array (  'module' => 'usr',  'action' => 'index',)
+Mar 31 16:37:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:37:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:37:42 symfony [info] {usrActions} Call "usrActions->executeIndex()"
+Mar 31 16:37:42 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:37:42 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.HIDDEN=false
+Mar 31 16:37:42 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/indexSuccess.php"
+Mar 31 16:37:42 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:37:42 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:37:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:37:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:37:42 symfony [info] {sfWebDebugLogger} Configuration 1.17 ms (9)
+Mar 31 16:37:42 symfony [info] {sfWebDebugLogger} Factories 22.04 ms (1)
+Mar 31 16:37:42 symfony [info] {sfWebDebugLogger} Action "usr/index" 27.92 ms (1)
+Mar 31 16:37:42 symfony [info] {sfWebDebugLogger} View "Success" for "usr/index" 7.17 ms (1)
+Mar 31 16:37:42 symfony [info] {sfWebResponse} Send content (62121 o)
+Mar 31 16:37:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'usr',  'action' => 'auth',)
+Mar 31 16:37:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:37:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:37:47 symfony [info] {usrActions} Call "usrActions->executeAuth()"
+Mar 31 16:37:47 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/authSuccess.php"
+Mar 31 16:37:47 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:37:47 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:37:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:37:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:37:47 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (9)
+Mar 31 16:37:47 symfony [info] {sfWebDebugLogger} Factories 17.53 ms (1)
+Mar 31 16:37:47 symfony [info] {sfWebDebugLogger} Action "usr/auth" 0.17 ms (1)
+Mar 31 16:37:47 symfony [info] {sfWebDebugLogger} View "Success" for "usr/auth" 29.56 ms (1)
+Mar 31 16:37:47 symfony [info] {sfWebResponse} Send content (43514 o)
+Mar 31 16:38:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/edit/id/1 with parameters array (  'module' => 'usr',  'action' => 'edit',  'id' => '1',)
+Mar 31 16:38:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:38:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:38:27 symfony [info] {usrActions} Call "usrActions->executeEdit()"
+Mar 31 16:38:27 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:38:27 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID='1' AND usr.HIDDEN=false
+Mar 31 16:38:27 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/editSuccess.php"
+Mar 31 16:38:27 symfony [debug] {sfPropelLogger} SELECT sys_pic.ID, sys_pic.FILENAME, sys_pic.HIDDEN FROM sys_pic
+Mar 31 16:38:27 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:38:27 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:38:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:38:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:38:27 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+Mar 31 16:38:27 symfony [info] {sfWebDebugLogger} Factories 22.64 ms (1)
+Mar 31 16:38:27 symfony [info] {sfWebDebugLogger} Action "usr/edit" 37.80 ms (1)
+Mar 31 16:38:27 symfony [info] {sfWebDebugLogger} View "Success" for "usr/edit" 32.25 ms (1)
+Mar 31 16:38:27 symfony [info] {sfWebResponse} Send content (93186 o)
+Mar 31 16:38:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update/id/1 with parameters array (  'module' => 'usr',  'action' => 'update',  'id' => '1',)
+Mar 31 16:38:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:38:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:38:31 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:38:31 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:38:31 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID='1' AND usr.HIDDEN=false
+Mar 31 16:38:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/update/id/1 with parameters array (  'module' => 'usr',  'action' => 'update',  'id' => '1',)
+Mar 31 16:38:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:38:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:38:59 symfony [info] {usrActions} Call "usrActions->executeUpdate()"
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID='1' AND usr.HIDDEN=false
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} SELECT COUNT(*) FROM usr WHERE usr.ID='1'
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.EMAIL='tabootask@gmail.com' AND usr.HIDDEN=false LIMIT 1
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} UPDATE usr SET PASS='7cbb3252ba6b7e9c422fac5334d22054', CREATED_AT='2010-03-31T16:37:00+0400', UPDATED_AT='2010-03-31T16:37:00+0400' WHERE usr.ID=1
+Mar 31 16:38:59 symfony [info] {sfFrontWebController} Redirect to "http://taskana.l/front_dev.php/usr/edit/id/1"
+Mar 31 16:38:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Mar 31 16:38:59 symfony [info] {sfWebResponse} Send header "Location: http://taskana.l/front_dev.php/usr/edit/id/1"
+Mar 31 16:38:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:38:59 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (8)
+Mar 31 16:38:59 symfony [info] {sfWebDebugLogger} Factories 17.40 ms (1)
+Mar 31 16:38:59 symfony [info] {sfWebDebugLogger} Action "usr/update" 50.75 ms (1)
+Mar 31 16:38:59 symfony [info] {sfWebResponse} Send content (115 o)
+Mar 31 16:38:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usr/edit/id/1 with parameters array (  'module' => 'usr',  'action' => 'edit',  'id' => '1',)
+Mar 31 16:38:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:38:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:38:59 symfony [info] {usrActions} Call "usrActions->executeEdit()"
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID='1' AND usr.HIDDEN=false
+Mar 31 16:38:59 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/editSuccess.php"
+Mar 31 16:38:59 symfony [debug] {sfPropelLogger} SELECT sys_pic.ID, sys_pic.FILENAME, sys_pic.HIDDEN FROM sys_pic
+Mar 31 16:38:59 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:38:59 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:38:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:38:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:38:59 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (9)
+Mar 31 16:38:59 symfony [info] {sfWebDebugLogger} Factories 22.83 ms (1)
+Mar 31 16:38:59 symfony [info] {sfWebDebugLogger} Action "usr/edit" 40.77 ms (1)
+Mar 31 16:38:59 symfony [info] {sfWebDebugLogger} View "Success" for "usr/edit" 44.69 ms (1)
+Mar 31 16:38:59 symfony [info] {sfWebResponse} Send content (93254 o)
+Mar 31 16:39:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'usr',  'action' => 'auth',)
+Mar 31 16:39:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:39:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:39:05 symfony [info] {usrActions} Call "usrActions->executeAuth()"
+Mar 31 16:39:05 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/usr/templates/authSuccess.php"
+Mar 31 16:39:05 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:39:05 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:39:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:39:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:39:05 symfony [info] {sfWebDebugLogger} Configuration 1.13 ms (9)
+Mar 31 16:39:05 symfony [info] {sfWebDebugLogger} Factories 17.54 ms (1)
+Mar 31 16:39:05 symfony [info] {sfWebDebugLogger} Action "usr/auth" 0.30 ms (1)
+Mar 31 16:39:05 symfony [info] {sfWebDebugLogger} View "Success" for "usr/auth" 7.65 ms (1)
+Mar 31 16:39:05 symfony [info] {sfWebResponse} Send content (43513 o)
+Mar 31 16:39:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /task with parameters array (  'module' => 'task',  'action' => 'index',)
+Mar 31 16:39:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:39:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:39:27 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Mar 31 16:39:27 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:39:27 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID=1 AND usr.HIDDEN=false
+Mar 31 16:39:27 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.HIDDEN=false ORDER BY usr.ID ASC
+Mar 31 16:39:27 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/task/templates/indexSuccess.php"
+Mar 31 16:39:27 symfony [info] {main} Call "navigation->executeIndex()"
+Mar 31 16:39:27 symfony [notice] {sfWebDebugLogger}  Notice at /web/taskana/apps/front/modules/task/templates/indexSuccess.php on line 70 (Undefined variable: usr)
+Mar 31 16:41:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /task with parameters array (  'module' => 'task',  'action' => 'index',)
+Mar 31 16:41:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:41:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:41:23 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Mar 31 16:41:23 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:41:23 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID=1 AND usr.HIDDEN=false
+Mar 31 16:41:23 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.HIDDEN=false ORDER BY usr.ID ASC
+Mar 31 16:41:23 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/task/templates/indexSuccess.php"
+Mar 31 16:41:23 symfony [info] {main} Call "navigation->executeIndex()"
+Mar 31 16:41:23 symfony [debug] {sfPropelLogger} SELECT task.ID, task.USERID, task.AUTHORID, task.TITLE, task.CONTENT, task.CREATED_AT, task.UPDATED_AT, task.RANK, task.HIDDEN, task.STATID, task.URGENCYID FROM task WHERE (task.STATID=1 OR task.STATID=2) AND task.USERID=1
+Mar 31 16:41:23 symfony [notice] {sfWebDebugLogger}  Notice at /web/taskana/apps/front/modules/task/templates/indexSuccess.php on line 91 (Undefined variable: i)
+Mar 31 16:41:23 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:41:23 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:41:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:41:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:41:23 symfony [info] {sfWebDebugLogger} Configuration 109.29 ms (12)
+Mar 31 16:41:23 symfony [info] {sfWebDebugLogger} Factories 17.48 ms (1)
+Mar 31 16:41:23 symfony [info] {sfWebDebugLogger} Action "task/index" 30.20 ms (1)
+Mar 31 16:41:23 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 124.83 ms (1)
+Mar 31 16:41:23 symfony [info] {sfWebDebugLogger} Component "navigation/index" 0.01 ms (1)
+Mar 31 16:41:23 symfony [info] {sfWebResponse} Send content (86168 o)
+Mar 31 16:41:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /task with parameters array (  'module' => 'task',  'action' => 'index',)
+Mar 31 16:41:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 31 16:41:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 31 16:41:52 symfony [info] {taskActions} Call "taskActions->executeIndex()"
+Mar 31 16:41:52 symfony [debug] {sfPropelLogger} SET NAMES 'utf8'
+Mar 31 16:41:52 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.ID=1 AND usr.HIDDEN=false
+Mar 31 16:41:52 symfony [debug] {sfPropelLogger} SELECT usr.ID, usr.PASS, usr.LOGIN, usr.EMAIL, usr.UPIC, usr.RANK, usr.BALANCE, usr.BOT, usr.HIDDEN, usr.COLOR, usr.DATE_BIRTH, usr.CREATED_AT, usr.UPDATED_AT FROM usr WHERE usr.HIDDEN=false ORDER BY usr.ID ASC
+Mar 31 16:41:52 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/modules/task/templates/indexSuccess.php"
+Mar 31 16:41:52 symfony [info] {main} Call "navigation->executeIndex()"
+Mar 31 16:41:52 symfony [debug] {sfPropelLogger} SELECT COUNT(*) FROM task WHERE task.STATID=3 AND task.USERID=1
+Mar 31 16:41:52 symfony [debug] {sfPropelLogger} SELECT task.ID, task.USERID, task.AUTHORID, task.TITLE, task.CONTENT, task.CREATED_AT, task.UPDATED_AT, task.RANK, task.HIDDEN, task.STATID, task.URGENCYID FROM task WHERE (task.STATID=1 OR task.STATID=2) AND task.USERID=1
+Mar 31 16:41:52 symfony [notice] {sfWebDebugLogger}  Notice at /web/taskana/apps/front/modules/task/templates/indexSuccess.php on line 91 (Undefined variable: i)
+Mar 31 16:41:52 symfony [info] {sfPHPView} Decorate content with "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:41:52 symfony [info] {sfPHPView} Render "/web/taskana/apps/front/templates/layout.php"
+Mar 31 16:41:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 31 16:41:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 31 16:41:52 symfony [info] {sfWebDebugLogger} Configuration 109.15 ms (12)
+Mar 31 16:41:52 symfony [info] {sfWebDebugLogger} Factories 17.26 ms (1)
+Mar 31 16:41:52 symfony [info] {sfWebDebugLogger} Action "task/index" 30.54 ms (1)
+Mar 31 16:41:52 symfony [info] {sfWebDebugLogger} View "Success" for "task/index" 133.05 ms (1)
+Mar 31 16:41:52 symfony [info] {sfWebDebugLogger} Component "navigation/index" 0.01 ms (1)
+Mar 31 16:41:52 symfony [info] {sfWebResponse} Send content (94994 o)
